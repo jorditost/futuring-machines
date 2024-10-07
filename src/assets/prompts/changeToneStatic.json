@@ -27,8 +27,11 @@
       "keys": ["title", "continuation"]
     },
     {
-      "type": "static",
-      "template": "::continuation::"
+      "type": "generate",
+      "template": {
+        "en": "Continue the following story, which is delimited with triple backticks, based on this idea: '::continuation::.' \n\nStory: ```::before::```",
+        "de": "Setzen Sie die folgende Geschichte fort, die mit dreifachen Backticks begrenzt ist. Gehen Sie auf diese Idee ein: '::continuation::'. \n\nGeschichte: ```::before::```"
+      }
     }
   ]
 }
