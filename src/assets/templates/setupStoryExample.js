@@ -6,11 +6,11 @@ export default {
   id: 'setup-story-example',
   prompts,
   name: {
-    en: 'Example: Setup Story 🧑🏻‍🏫📝',
+    en: 'Example: Story Setup 🧑🏻‍🏫📝',
     de: 'Beispiel: Geschichte planen 🧑🏻‍🏫📝'
   },
   description: {
-    en: 'How to setup a story?',
+    en: 'How to plan a story?',
     de: 'Wie kann man eine Geschichte vorbereiten?'
   },
   template: {

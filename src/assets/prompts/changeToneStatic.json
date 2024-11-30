@@ -1,5 +1,5 @@
 {
-  "name": { "en": "continue with tone", "de": "Weiterschreiben mit Ton" },
+  "name": { "en": "continue with tone", "de": "Weiter schreiben mit Ton" },
   "trigger": "new-line",
   "mode": "append",
   "actions": [
