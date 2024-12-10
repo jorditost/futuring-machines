@@ -8,6 +8,9 @@ export const useSettingStore = defineStore('setting', () => {
     langOptions.find((l) => new RegExp(`^${l}`).test(navigator.language)) ?? langOptions[0]
   )
 
+  const modelOptions = import.meta.env.VITE_MODEL_OPTIONS.split(',')
+  const model = useStorage('model', modelOptions[0])
+
   const shareOptions = ['upload', 'download', 'both']
   const share = useStorage('share', 'upload')
 
@@ -15,7 +18,9 @@ export const useSettingStore = defineStore('setting', () => {
     lang,
     langOptions,
     share,
-    shareOptions
+    shareOptions,
+    model,
+    modelOptions
   }
 })
 

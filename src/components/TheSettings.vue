@@ -13,6 +13,8 @@ const url = ref(import.meta.env.VITE_STORIES_STATIC_URL)
 <template>
   <div class="settings">
     <h1>Settings</h1>
+    <h2>Model</h2>
+    <InputSegment :options="settingStore.modelOptions" v-model="settingStore.model" name="model" />
     <h2>Language</h2>
     <p>Set the language for the stories.</p>
     <InputSegment :options="settingStore.langOptions" v-model="settingStore.lang" name="lang" />

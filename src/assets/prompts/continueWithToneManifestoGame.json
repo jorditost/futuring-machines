@@ -1,0 +1,32 @@
+{
+  "name": { "en": "continue with tone", "de": "Weiter schreiben mit Ton" },
+  "trigger": "new-line",
+  "mode": "append",
+  "actions": [
+    {
+      "type": "options",
+      "options": [
+        { "en": "radical", "de": "radikal" },
+        { "en": "playful", "de": "spielerisch" },
+        { "en": "angry", "de": "wütend" },
+        { "en": "righteous", "de": "gerecht" },
+        { "en": "outraged", "de": "empört" },
+        { "en": "excited", "de": "excited" },
+        { "en": "funny", "de": "lustig" },
+        { "en": "hopeful", "de": "hoffnungsvoll" },
+        { "en": "measured", "de": "gemessen" },
+        { "en": "urgent", "de": "dringend" },
+        { "en": "mystical", "de": "mystisch" },
+        { "en": "absurd", "de": "absurd" }        
+      ],
+      "bind": "tone"
+    },
+    {
+      "type": "generate",
+      "template": {
+        "en": "Continue the following manifesto, which is delimited with triple backticks. Generate a continuation with a ::tone:: tone. The continuation should use no more than 1 short sentence and use at most 20 words. \n\nManifesto: ```::before::```",
+        "de": "Fahre mit dem folgenden Manifest fort, die mit dreifachen Backticks begrenzt ist. Generiere eine Fortsetzung mit einem ::tone::. Die Fortsetzungen sollten nicht mehr als 1 kurzer Satz mit nicht mehr als 20 Wörter umfassen.\n\n Generiere den Text nur auf Deutsch.\n\nGeschichte: ```::before::```"
+      }
+    }
+  ]
+}
