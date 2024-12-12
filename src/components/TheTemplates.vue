@@ -43,7 +43,7 @@ function importFile(e) {
 <template>
   <div class="templates">
     <h1>Futuring Machines</h1>
-    <h2>Select a template</h2>
+    <h2>Select a manifesto template</h2>
     <div class="template-buttons">
       <RouterLink
         v-for="template in commandStore.templatesEnabled"
