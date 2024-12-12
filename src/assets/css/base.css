@@ -12,4 +12,6 @@ body {
   &::-webkit-scrollbar {
     display: none;
   }
+
+  zoom: 150%;
 }

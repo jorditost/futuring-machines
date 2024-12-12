@@ -29,7 +29,7 @@ defineProps({
 </template>
 <style scoped>
 .button-list {
-  border: 1px solid currentColor;
+  border: 1.5px solid currentColor;
   cursor: pointer;
   border-radius: calc(5 * var(--border-radius));
   background: none;

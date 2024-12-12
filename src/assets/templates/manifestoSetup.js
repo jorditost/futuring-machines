@@ -1,5 +1,5 @@
 //import prompts from '@/assets/prompts'
-import systemManifesto from '@/assets/prompts/systemManifesto'
+import systemManifesto from '@/assets/prompts/systemManifestoProvocative'
 import continueWriting from '@/assets/prompts/continueWriting'
 import continueWritingManifesto from '@/assets/prompts/continueWritingManifesto'
 import continueWithToneManifesto from '@/assets/prompts/continueWithToneManifestoGame'

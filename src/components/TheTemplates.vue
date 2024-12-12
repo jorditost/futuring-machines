@@ -43,7 +43,7 @@ function importFile(e) {
 <template>
   <div class="templates">
     <h1>Futuring Machines</h1>
-    <h2>Story Templates</h2>
+    <h2>Select a template</h2>
     <div class="template-buttons">
       <RouterLink
         v-for="template in commandStore.templatesEnabled"
@@ -57,7 +57,7 @@ function importFile(e) {
       </RouterLink>
     </div>
     <template v-if="storyStore.stories?.length > 0">
-      <h2>Recent stories</h2>
+      <h2>Drafts</h2>
       <ul class="selection-list">
         <RouterLink
           v-for="story in storyStore.stories"
@@ -83,7 +83,7 @@ function importFile(e) {
         disable-padding
         title="import"
       >
-        Import Story&nbsp;<IconImport />
+        Import&nbsp;<IconImport />
       </ButtonDefault>
       <input id="file-import" type="file" accept="application/json" @change="importFile" multiple />
     </div>
@@ -104,6 +104,7 @@ function importFile(e) {
     font: var(--font-ui-serif);
     font-size: var(--font-size-heading);
     grid-column: center-start / center-end;
+    margin-bottom: calc(var(--spacing) * 0.5)
   }
 
   h2 {
@@ -123,7 +124,7 @@ function importFile(e) {
   }
 
   .template-buttons {
-    margin: 0 calc(var(--spacing) * 1.5);
+    margin: 0 calc(var(--spacing) * 1.5) var(--spacing);
     display: flex;
     gap: var(--spacing);
     flex-wrap: wrap;

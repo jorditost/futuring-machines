@@ -19,3 +19,31 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Redaction_10';
+  src: url('@/assets/fonts/Redaction_10-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Redaction_10';
+  src: url('@/assets/fonts/Redaction_10-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Redaction_20';
+  src: url('@/assets/fonts/Redaction_20-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Redaction_20';
+  src: url('@/assets/fonts/Redaction_20-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}

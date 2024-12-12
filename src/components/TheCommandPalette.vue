@@ -39,11 +39,13 @@ async function run(editor, prompt) {
   }
 }
 
-const availablePrompts = computed(() =>
-  editorStore.selection != null
-    ? commandStore.promptsEnabled.filter((prompt) => prompt.trigger === 'selection')
-    : commandStore.promptsEnabled.filter((prompt) => prompt.trigger !== 'selection')
-)
+const availablePrompts = computed(() => commandStore.promptsEnabled.filter((prompt) => prompt.trigger !== 'selection') )
+
+// const availablePrompts = computed(() =>
+//   editorStore.selection != null
+//     ? commandStore.promptsEnabled.filter((prompt) => prompt.trigger === 'selection')
+//     : commandStore.promptsEnabled.filter((prompt) => prompt.trigger !== 'selection')
+// )
 
 const repeatable = computed(() => {
   const index = startIndex.value ? startIndex.value - 1 : 0
@@ -54,7 +56,9 @@ const repeatable = computed(() => {
   )
 })
 
-const showPrompts = computed(() => openPrompts.value || editorStore.selection != null)
+// Show prompts
+const showPrompts = computed(() => openPrompts.value )
+// const showPrompts = computed(() => openPrompts.value || editorStore.selection != null)
 
 function closePromptSelection(force) {
   openPrompts.value = false
@@ -70,8 +74,8 @@ function openPromptSelection() {
   startIndex.value = 0
   commandStore.resetPrompts()
   openPrompts.value = true
-  editorStore.editor.on('update', closePromptSelection)
-  editorStore.editor.on('selectionUpdate', closePromptSelection)
+  // editorStore.editor.on('update', closePromptSelection)
+  // editorStore.editor.on('selectionUpdate', closePromptSelection)
 }
 
 function togglePromptSelection(force) {
@@ -153,7 +157,7 @@ function printPage() {
         @cancel="cancel"
       />
       <template v-else>
-        <div class="list" v-if="availablePrompts.length > 3">
+        <div class="list" v-if="availablePrompts.length > 0">
           <ButtonList
             v-for="(prompt, i) in availablePrompts"
             :key="i"
@@ -187,7 +191,7 @@ function printPage() {
         </div>
       </template>
     </template>
-    <hr />
+    <!-- <hr /> -->
     <div class="controls">
       <span class="left">
         <ButtonDefault offset-padding @click="togglePromptSelection(true)" :active="showPrompts"
@@ -231,12 +235,15 @@ function printPage() {
   background: var(--color-background);
   row-gap: calc(var(--spacing) / 2);
 
+  /* border-top: 1.5px solid var(--color-ai); */
+
   hr {
     grid-column: outer-start / outer-end;
     border: none;
     height: 1px;
-    --color-user-light: color-mix(in lab, var(--color-user), transparent 70%);
-    background: var(--color-user-light);
+    /* --color-user-light: color-mix(in lab, var(--color-user), transparent 70%); */
+    /* background: var(--color-user-light); */
+    /* background: var(--color-user); */
   }
 
   .breadcrumb-navigation {

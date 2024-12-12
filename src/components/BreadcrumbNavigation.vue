@@ -19,7 +19,7 @@ const commandStore = useCommandStore()
 </script>
 <template>
   <div class="breadcrumb-navigation">
-    <span @click="$emit('reset', 0)">prompts</span>
+    <span @click="$emit('reset', 0)">actions</span>
     <template v-for="(crumb, i) in crumbs" :key="i">
       <span class="separator"> / </span>
       <span v-if="i + 1 < crumbs.length" @click="$emit('reset', i + 1)">

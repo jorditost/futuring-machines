@@ -28,7 +28,7 @@ watch(
   <div class="editor-wrapper">
     <input
       class="input-meta title"
-      :placeholder="localize(commandStore.template?.name, commandStore.lang)"
+      placeholder="Your manifesto title here"
       v-model="commandStore.storyName"
       @click.stop
       @keydown.stop

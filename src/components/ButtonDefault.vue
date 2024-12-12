@@ -41,7 +41,7 @@ defineProps({
   cursor: pointer;
   padding: 2.5px 10px;
   &.offset-padding {
-    margin: -2.5px -10px;
+    /* margin: -2.5px -10px; */
   }
   border-radius: calc(2 * var(--border-radius));
   transition:

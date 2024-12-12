@@ -1,8 +1,11 @@
 :root {
   --color-background: #fff;
-  --color-user: #b13514;
+  /* --color-user: #b13514;
   --color-ai: #2f297f;
-  --color-ui: #2f297f;
+  --color-ui: #2f297f; */
+  --color-user: #FF644E;
+  --color-ai: #2962F6;
+  --color-ui: #2962F6;
 
   --font-size: 25px;
   --font-size-ui: 16px;
@@ -10,15 +13,19 @@
   --font-size-heading: 2.5em;
 
 
-  --font-text: 400 var(--font-size) / var(--line-height) 'Redaction', serif;
+  --font-text: 400 var(--font-size) / var(--line-height) 'Redaction_10', serif;
   --font-heading: 700 var(--font-size) / var(--line-height) 'Inter', sans-serif;
   --font-ui: 400 var(--font-size-ui) / var(--line-height) 'Inter', sans-serif;
-  --font-ui-serif: 400 var(--font-size-ui) / var(--line-height) 'Redaction', serif;
+  --font-ui-serif: 400 var(--font-size-ui) / var(--line-height) 'Redaction_10', serif;
 
   --border-radius: 12px;
-  --spacing: 20px;
+  --spacing: 15px;
 
   @media print {
     --font-size: 18px;
+
+    body {
+      zoom: 100%;
+    }
   }
 }

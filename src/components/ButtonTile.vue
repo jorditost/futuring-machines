@@ -41,7 +41,7 @@ const dimensions = computed(() => {
 </template>
 <style scoped>
 .button-tile {
-  border: 1px solid currentColor;
+  border: 1.5px solid currentColor;
   cursor: pointer;
   border-radius: var(--border-radius);
   background: none;

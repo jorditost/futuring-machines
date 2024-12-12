@@ -6,8 +6,8 @@
     {
       "type": "generate",
       "template": {
-        "en": "Continue the following manifesto. Follow up the event prompted in the last sentence or paragraph. \n\nKeep the style of the manifesto. \n\nManifesto: ::before::",
-        "de": "Setzen Sie das folgende Manifest fort. Die Forsetzung sollte das im letzten Satz oder Absatz angesprochener Ereignis weiterverfolgen. \n\nBehalten Sie den Stil des Manifestos bei. \n\nManifesto: ::before::"
+        "en": "Continue the following manifesto. Follow up the events and topics prompted in the last sentence or paragraph. \n\nKeep the style of the manifesto. \n\nManifesto: ::before::",
+        "de": "Setzen Sie das folgende Manifest fort. Die Forsetzung sollte das im letzten Satz oder Absatz angesprochener Ereignis oder Thema weiterverfolgen. \n\nBehalten Sie den Stil des Manifestos bei. \n\nManifesto: ::before::"
       }
     }
   ]
